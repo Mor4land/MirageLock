@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.miragelock.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "HandledScreenMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "LocalPlayerMixin",
+    "AbstractContainerScreenAccessor",
+    "InventoryAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

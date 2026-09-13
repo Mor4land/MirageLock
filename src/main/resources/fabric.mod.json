@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "miragelock",
+	"version": "${version}",
+	"name": "MirageLock",
+	"description": "Mod preventing accidental item drops (Ctrl+Q) with NBT parsing & Mod Menu support for Minecraft 1.21.11.",
+	"authors": [
+		"mlowers"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/miragelock/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.miragelock.MirageLockMod"
+		],
+		"client": [
+			"com.miragelock.client.MirageLockClient"
+		],
+		"modmenu": [
+			"com.miragelock.client.gui.MirageLockModMenu"
+		]
+	},
+	"mixins": [
+		{
+			"config": "miragelock.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
